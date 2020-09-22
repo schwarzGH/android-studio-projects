@@ -1,0 +1,3 @@
+include ':tipcalc'
+include ':app'
+rootProject.name = "LabModules"
