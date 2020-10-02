@@ -8,11 +8,11 @@
 
     <EditText
         android:id="@+id/etAmount"
-        android:autofillHints="no"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="32dp"
+        android:autofillHints="no"
         android:ems="10"
         android:hint="@string/input_text"
         android:inputType="none|numberDecimal"
@@ -22,68 +22,75 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <SeekBar
-        android:id="@+id/sb_percent"
-        android:layout_width="142dp"
-        android:layout_height="18dp"
-        android:layout_marginTop="140dp"
-        android:layout_marginEnd="100dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
         android:id="@+id/tv_percent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
         android:layout_marginStart="36dp"
-        android:layout_marginTop="136dp"
-        android:textSize="@dimen/text_size"
+        android:layout_marginTop="24dp"
+        android:text="@string/percent"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="@string/percent" />
+        app:layout_constraintTop_toBottomOf="@+id/etAmount" />
+
+    <SeekBar
+        android:id="@+id/sb_percent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toEndOf="@+id/tv_percent"
+        app:layout_constraintTop_toBottomOf="@+id/etAmount" />
 
     <TextView
         android:id="@+id/tv_label_tip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginBottom="360dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="164dp"
         android:text="@string/tip"
         android:textSize="@dimen/text_size"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_percent" />
 
     <TextView
         android:id="@+id/tv_tip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="116dp"
-        android:layout_marginTop="248dp"
+        android:layout_marginTop="184dp"
         android:text="@string/_0_00"
         android:textSize="@dimen/text_size"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.406"
+        app:layout_constraintStart_toEndOf="@+id/tv_label_tip"
+        app:layout_constraintTop_toBottomOf="@+id/sb_percent" />
 
     <TextView
         android:id="@+id/tv_total"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="116dp"
-        android:layout_marginBottom="248dp"
         android:text="@string/_0_00"
         android:textSize="@dimen/text_size"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.356"
+        app:layout_constraintStart_toEndOf="@+id/tv_label_total"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tip"
+        app:layout_constraintVertical_bias="0.353" />
 
     <TextView
         android:id="@+id/tv_label_total"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginBottom="248dp"
+        android:layout_marginStart="56dp"
         android:text="@string/total"
         android:textSize="@dimen/text_size"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_label_tip"
+        app:layout_constraintVertical_bias="0.365" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
