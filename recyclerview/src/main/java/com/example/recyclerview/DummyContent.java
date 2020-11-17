@@ -1,9 +1,4 @@
-package com.example.thirdapplication;
-
-import android.content.res.Resources;
-import android.util.Log;
-
-import java.util.Random;
+package com.example.recyclerview;
 
 
 public class DummyContent {

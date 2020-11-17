@@ -1,4 +1,4 @@
-package com.example.thirdapplication;
+package com.example.recyclerview;
 
 public class DummyItem {
     public final String id;

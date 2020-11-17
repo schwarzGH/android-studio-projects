@@ -7,7 +7,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class DummyItemDetailsActivity extends AppCompatActivity {
+public class DetailsActivity extends AppCompatActivity {
 
     final static String ARG_ITEM_ID = "com.example.EXTRA_ITEM_ID";
     private TextView tvDetails;

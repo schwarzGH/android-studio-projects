@@ -1,4 +1,4 @@
-package com.example.thirdapplication;
+package com.example.recyclerview;
 
 import android.content.Context;
 import android.content.Intent;
@@ -37,7 +37,7 @@ public class DummyContentAdapter extends RecyclerView.Adapter<DummyContentAdapte
     @Override
     public DummyContentAdapter.DummyItemViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.dummy_item, parent, false);
+                .inflate(R.layout.dummy_layout, parent, false);
         return new DummyItemViewHolder(view);
     }
 
@@ -62,8 +62,8 @@ public class DummyContentAdapter extends RecyclerView.Adapter<DummyContentAdapte
             int position = (int) view.getTag();
             DummyItem item = content.getItem(position);
             Context context = view.getContext();
-            Intent intent = new Intent(context, DummyItemDetailsActivity.class);
-            intent.putExtra(DummyItemDetailsActivity.ARG_ITEM_ID, item.id);
+            Intent intent = new Intent(context, DetailsActivity.class);
+            intent.putExtra(DetailsActivity.ARG_ITEM_ID, item.id);
             context.startActivity(intent);
         }
     };
