@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">gson_lab4</string>
+    <string name="color">Цвет:</string>
+    <string name="buttontext">Из JSON  в объект</string>
+    <string name="tv_address">Адрес</string>
+    <string name="tv_cat">Имя, возраст, цвет:</string>
+    <string name="button2text">Из объекта в JSON</string>
 </resources>
