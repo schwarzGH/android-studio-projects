@@ -1,3 +1,4 @@
+include ':sandwich_club'
 include ':gson_lab4'
 include ':recyclerview'
 include ':phrase_gen'
