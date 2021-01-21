@@ -11,10 +11,10 @@
         android:theme="@style/Theme.LabModules">
         <activity android:name=".ButtonClickActivity"></activity>
         <activity android:name=".MotionEventActivity"></activity>
+        <activity android:name=".CommonGesturesActivity"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

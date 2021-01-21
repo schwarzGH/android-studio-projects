@@ -26,18 +26,21 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-        TextView textView = (TextView) findViewById(R.id.textView);
         switch (id)
         {
             case R.id.action_ButtonClick:
-                Intent intent = new Intent(MainActivity.this, ButtonClickActivity.class);
-                startActivity(intent);
+                startActivity(new Intent(MainActivity.this, ButtonClickActivity.class));
+                break;
 
             case R.id.action_MotionEvent:
-                Intent intent2 = new Intent(MainActivity.this, MotionEventActivity.class);
-                startActivity(intent2);
+                startActivity(new Intent(MainActivity.this, MotionEventActivity.class));
+                break;
+
+            case R.id.action_CommonGestures:
+                startActivity(new Intent(MainActivity.this, CommonGesturesActivity.class));
+                break;
 
         }
-        return super.onOptionsItemSelected(item);
+        return true;
     }
 }

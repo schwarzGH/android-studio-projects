@@ -12,7 +12,7 @@ public class ButtonClickActivity extends  MainActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_buttonclick);
         Button button = findViewById(R.id.button1);
-        TextView textView = findViewById(R.id.textView);
+        TextView textView = findViewById(R.id.tv_buttonclick);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
