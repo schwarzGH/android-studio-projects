@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <item
+        android:id="@+id/action_ButtonClick"
+        android:orderInCategory="1"
+        android:title="@string/buttonclick" />
+    <item
+        android:id="@+id/action_MotionEvent"
+        android:orderInCategory="2"
+        android:title="@string/motionevent" />
+    <item
+        android:id="@+id/action_CommonGestures"
+        android:orderInCategory="3"
+        android:title="@string/commongestures" />
 </menu>
